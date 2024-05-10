@@ -80,7 +80,7 @@ export const MyUserContextProvider = (props: Props) => {
   return <UserContext.Provider value={value} {...props} />;
 };
 
-const useUser = () => {
+export const useUser = () => {
   const context = useContext(UserContext);
 
   if (!context)
